@@ -58,7 +58,7 @@ p#poscabecalho{
     position: relative; 
     color: #00BFFF;
     margin-left: 20px; 
-    top: 100% 90vw; 
+    top: 30px; 
     font-size: 0.9em;
     font-style: italic;
     opacity: 0.7;
@@ -69,7 +69,7 @@ p#poscabecalho{
 
 div#actions{
     position: relative; 
-    top: -20px; 
+    top: -35px; 
     margin-left:220%; 
     display: flex; 
     align-items: center; 
@@ -89,7 +89,7 @@ div#actions button {
 div#actions a{
     margin-left: 100px; 
     position: relative; 
-    top: -10px; 
+    top: -13px; 
 }
 
 div#banner{
@@ -208,20 +208,24 @@ footer {
     margin: 0 auto; 
 }
 
-div#Empresa, div#formulario, div#redes_sociais {
+ div#formulario, div#redes_sociais {
     flex: 1; 
     min-width: 250px;
     margin: 20px;
 }
 
-div#Empresa figcaption {
+div#empresa figcaption {
     font-style: italic;
+    position: relative;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-div#Empresa img {
+div#empresa figure{
     display: block;
     margin: 10px 0;
+    position: relative;
+    text-align: center;
 }
 
 div#formulario h3, div#redes_sociais h3 { 
@@ -247,7 +251,7 @@ div#formulario h3, div#redes_sociais h3 {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    width: 1139px;
+    width: 1200px;
     transition: background-color 0.3s;
 }
 
