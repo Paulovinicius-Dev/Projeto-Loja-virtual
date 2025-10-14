@@ -1,0 +1,305 @@
+header{
+border-bottom: 4px solid var(#00BFFF);
+background-color:rgb(5, 10, 99);
+height: auto; 
+/* layout adaptado p grid */
+padding: 15px 20px;
+margin-left: -10px;
+margin-top: -10px;
+margin-right: -10px;
+box-shadow:rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: space-between;
+align-items: center; 
+/* centraliza os espaços */
+flex-wrap: wrap;
+}
+
+div#imagem {
+margin-top: 0; 
+/* mudei o numero do mgtop p que fique melhor */
+}
+
+nav#navegacao{
+    display: block;
+}
+
+nav#navegacao ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: static; 
+    /* estatico a partir de agora */
+    top: auto; 
+    /* reset */
+    left: auto; 
+    /* reset */
+    margin-left: 0; 
+    /* reset */
+    padding: 0; 
+    /* reset */
+    display: flex; 
+    /* flex de liner p alinhar */
+}
+
+nav#navegacao li{
+    display: inline-block;
+    margin: 0 10px; 
+    /* margem ajustada p links */
+    transition: 1s;
+}
+
+nav#navegacao a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav#navegacao a:hover{
+    color: #00E5FF;
+    text-decoration: underline;
+}
+
+/* "section#poscabecalho p" não é um seletor HTML valido mudei p "p#poscabecalho" */
+
+p#poscabecalho{
+    text-align: center;
+    text-decoration-color: #FFFFFF;
+    position: static; 
+    /* static de novo */
+    color: #00BFFF;
+    margin-left: 20px; 
+    /* retirei as proporcoes para ficar tudo padrao */
+    top: auto; 
+    /* reset */
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.7;
+
+}
+
+
+div#actions{
+    position: static; 
+    top: auto; 
+    margin-left: auto; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    
+/* tudoaq em cima foi mudado p o statics e resetados para config auto */
+
+}
+
+div#actions button {
+    margin-left: 0; 
+    position: static; 
+    top: auto; 
+    background-color: #00BFFF;
+    box-shadow: 1px 1px auto;
+    /* tudoaq em cima foi mudado p o statics e resetados para config auto */
+}
+
+div#actions a{
+    margin-left: 0; 
+    position: static; 
+    top: auto; 
+    /* tudoaq em cima foi mudado p o statics e resetados para config auto */
+}
+
+div#banner{
+   width: 100%; /* 110% p 100% */
+   height: auto;
+   position: relative;
+   object-fit: center;
+   margin-left: 0; 
+   /* ajuste marg */
+   margin-right:auto;
+   border-top: 4px solid #00BFFF;
+
+}
+
+div#container{
+    text-align: center;
+    width: 700px;
+}
+
+body#corpo{
+    font-family:Arial, Helvetica, sans-serif ;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* CORREÇÃO PRINCIPAL: Aplicação do CSS Grid para as seções de produtos */
+section#produtos, section#outras_imagens {
+    display: grid; 
+    /* GRID (grade de 4 (la ele)) */
+    grid-template-columns: repeat(4, 1fr); 
+    /* todas colunas com mesmo padrao */
+    gap: 20px; 
+    /* espaçamento produtos */
+    max-width: 1100px; 
+    /* largura auto p img */
+    margin: 20px auto; 
+    /* centraliza a section na pag */
+    padding: 20px 0; 
+    /*  padding */
+}
+
+/* h1 em todas as colunas e centralizado agr */
+section#produtos h1, section#outras_imagens h1 {
+    grid-column: 1 / -1; 
+    /* h1 te ultima column */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+figure{ 
+    /* estila em toda fgr */
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+    margin: 0; 
+    /* reset */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+    position: static; 
+    /* IMPORTANTE: ISSO GARANTE QUE NENHUM POSICIONAMENTO QUEBRE O GRID */
+}
+
+figure:hover{ 
+    /* hover unificado */
+    background-color: #f0f0f0;
+    transform:translateY(-1px);
+}
+
+figure figcaption h3{ 
+    /* seletor da h3 organizado agr */
+    text-align: center;
+    min-height: 3em; 
+    /* mantem o alinhamento agr */
+    overflow: hidden;
+}
+
+figure figcaption p{ 
+    /* unifiquei o seletor de p */
+    text-align: center;
+    color: #010184;
+    font-weight: bold;
+}
+
+figure img { 
+    /* imagem ajustada full */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* botao carrinho ajustado pro grid */
+
+.btn-add-carr{
+background-color: #00E5FF;
+color: black;
+padding: 9px 10px;
+border: none;
+border-radius: 5px;
+font-size: 1.1em;
+font-weight: bold;
+text-transform: uppercase;
+cursor: pointer;
+transition: background-color 0.3 ease, transform 0.1s;
+}
+
+.btn-add-carr:hover{
+    background-color: #33F9FF;
+    transform: translateY(-1px);
+}
+
+.btn-add-carr:active{
+    background-color: #00BFFF;
+}
+
+/* estilo do rodape pro flex */
+section#rodape {
+    background-color: rgb(5, 10, 99); 
+    /* tava sem fundo, ta com fundo agr */
+    color: #ffffff; 
+    /* estava sem cor o texto, deixei que nem o padrao */
+    padding: 40px 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+footer {
+    display: flex; 
+    /* flexbox p ficar lado a lado */
+    justify-content: space-around; 
+    /* espacamento dos blocos */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; 
+    /* centraliza o footer */
+}
+
+div#Empresa, div#formulario, div#redes_sociais {
+    flex: 1; 
+    /* correção de composicao */
+    min-width: 250px;
+    margin: 20px;
+}
+
+div#Empresa figcaption {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+div#Empresa img {
+    display: block;
+    margin: 10px 0;
+}
+
+div#formulario h3, div#redes_sociais h3 { 
+    /* style p composicao*/
+    border-bottom: 2px solid #00BFFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input, .newsletter-form button { 
+    /* boto~es estilizados e padrao */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-form input {
+    color: #333;
+}
+
+.newsletter-form button.btn-primary {
+    background-color: #00BFFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button.btn-primary:hover {
+    background-color: #00E5FF;
+}
+
+div#redes_sociais a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+div#redes_sociais img {
+    transition: transform 0.3s;
+}
+
+div#redes_sociais img:hover {
+    transform: scale(1.1);
+}

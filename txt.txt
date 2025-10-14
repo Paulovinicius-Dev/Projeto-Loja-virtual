@@ -1,0 +1,301 @@
+Nome da loja: Evotech
+
+cabeçalho:
+
+    - Vai ter uma cor azul marinho escuro #1A237E
+    - Texto "Alpha" branco #ffffff 
+    - detalhes (tags) cinza claro #BDBDBD
+    - Logo na esquerda 
+    - Aba de navegação na direita 
+
+cabeçalho (navegação):
+    - Inicio 
+    - Produtos
+    - Ofertas
+    - Contato
+        . Um menu fixo
+        . Destaque da Ação ou ícone do carrinho, Ciano Elétrico (#00E5FF)
+        . um hover de transição de 1s.
+    - Envolvendo seu mundo digital
+        . fica junto ao header (cabeçalho)
+    
+Corpo:
+
+    -Banner principal
+        . Um explore agora linkado a aba de produtos.
+    - section Produtos em destaque
+        . Fotos do produto 
+        . Valor do produto 
+        . Nome do produto
+        . Um botão de adicionar ao carrinho sem funcionalidade
+    - Section Sobre a loja 
+        . Um pequeno texto apresentando a historia e missao da loja 
+        . Uma imagem da equipe ou produtos.
+    - Section Contato
+        . Formulário com os campos:
+            . Nome completo 
+            . Email
+            . Mensagem 
+        . Botao enviar 
+        . Campos obrigatorios
+
+Rodapé (Footer)
+    - Links para redes sociais (Com icones)
+    - Informações da empresa
+    - Copryter
+
+
+
+
+
+header{
+border-bottom: 4px solid var(#00BFFF);
+background-color:rgb(5, 10, 99);
+height: 100px;
+padding: 15px 20px;
+margin-left: -10px;
+margin-top: -10px;
+margin-right: -10px;
+box-shadow:rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+div#imagem {
+margin-top: -60px;
+}
+
+nav#navegacao{
+    display: block;
+}
+
+nav#navegacao ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    margin-left: -20px;
+}
+
+nav#navegacao li{
+    display: inline-block;
+    margin: 20px;
+    transition: 1s;
+}
+
+nav#navegacao a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav#navegacao a:hover{
+    color: #00E5FF;
+    text-decoration: underline;
+}
+
+section#poscabecalho p{
+    position: center;
+}
+
+p#poscabecalho{
+    text-align: center;
+    text-decoration-color: #FFFFFF;
+    position: relative;
+    color: #00BFFF;
+    margin-left:980px;
+    top: -153px;
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.7;
+  
+}
+
+
+div#actions{
+    position: relative;
+    top: -186px;
+    margin-left: 1300px;
+    
+}
+
+div#actions button {
+    margin-left: 180px;
+    position: relative;
+    top: -22px;
+    background-color: #00BFFF;
+    box-shadow: 1px 1px auto;
+}
+
+div#actions a{
+    margin-left: 270px;
+    position: relative;
+    top: -47px;
+}
+
+/* Conteudo principal */
+
+div#banner{
+   width: 110%;
+   height: auto;
+   position: relative;
+   object-fit: center;
+   margin-left: -10px;
+   margin-right:auto;
+   border-top: 4px solid #00BFFF;
+
+}
+
+div#container{
+    text-align: center;
+    width: 700px;
+}
+
+body#corpo{
+    font-family:Arial, Helvetica, sans-serif ;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+}
+/* Configurações das imagens dos produtos */
+
+section#produtos{
+   margin-right: 400px;
+}
+
+    
+
+/*Produto iphone */
+
+Figure#iphone{
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        margin-left: 20px;
+        margin-right: 1220px;
+        cursor: pointer;
+        transition: background-color 0.3 ease, transform 0.1s;
+}
+
+.fugure.iphone{
+    background-color: #00BFFF;
+    transform:translateY(-1px);
+}
+
+figure#iphone figcaption h3{
+    text-align: center;
+}
+
+figure#iphone figcaption p{
+    text-align: center;
+    color: #010184;
+    font-weight: bold;
+}
+
+/* Produto Relogio */
+
+Figure#relogio{
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        margin-left: 20px;
+        margin-right: 1220px;
+        cursor: pointer;
+        transition: background-color 0.3 ease, transform 0.1s;
+}
+
+.fugure.relogio{
+    background-color: #00BFFF;
+    transform:translateY(-1px);
+}
+
+figure#relogio figcaption h3{
+    text-align: center;
+}
+
+figure#relogio figcaption p{
+    text-align: center;
+    color: #010184;
+    font-weight: bold;
+}
+
+/* Configuração produto fone */
+
+Figure#fone{
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        margin-left: 20px;
+        margin-right: 1220px;
+        cursor: pointer;
+        transition: background-color 0.3 ease, transform 0.1s;
+}
+
+.fugure.fone{
+    background-color: #00BFFF;
+    transform:translateY(-1px);
+}
+
+figure#fone figcaption h3{
+    text-align: center;
+}
+
+figure#fone figcaption p{
+    text-align: center;
+    color: #010184;
+    font-weight: bold;
+}
+
+/* Configuração produto drone */
+
+Figure#drone{
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        margin-left: 20px;
+        margin-right: 1220px;
+        cursor: pointer;
+        transition: background-color 0.3 ease, transform 0.1s;
+}
+
+.fugure.drone{
+    background-color: #00BFFF;
+    transform:translateY(-1px);
+}
+
+figure#drone figcaption h3{
+    text-align: center;
+}
+
+figure#drone figcaption p{
+    text-align: center;
+    color: #010184;
+    font-weight: bold;
+}
+
+/* Configuração botão do carrinho */
+
+.btn-add-carr{
+background-color: #00E5FF;
+color: black;
+padding: 9px 10px;
+border: none;
+border-radius: 5px;
+font-size: 1.1em;
+font-weight: bold;
+text-transform: uppercase;
+cursor: pointer;
+transition: background-color 0.3 ease, transform 0.1s;
+}
+
+.btn-add-carr:hover{
+    background-color: #33F9FF;
+    transform: translateY(-1px);
+}
+
+.btn-add-carr:active{
+    background-color: #00BFFF;
+}
+
+
