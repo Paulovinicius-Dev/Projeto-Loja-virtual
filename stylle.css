@@ -1,8 +1,9 @@
+/* Cabeçalho */
+
 header{
 border-bottom: 4px solid var(#00BFFF);
 background-color:rgb(5, 10, 99);
 height: auto; 
-/* layout adaptado p grid */
 padding: 15px 20px;
 margin-left: -10px;
 margin-top: -10px;
@@ -10,14 +11,12 @@ margin-right: -10px;
 box-shadow:rgba(0, 0, 0, 0.5);
 display: flex;
 justify-content: space-between;
-align-items: center; 
-/* centraliza os espaços */
+align-items:center; 
 flex-wrap: wrap;
 }
 
 div#imagem {
-margin-top: 0; 
-/* mudei o numero do mgtop p que fique melhor */
+margin-top: -20px; 
 }
 
 nav#navegacao{
@@ -28,23 +27,17 @@ nav#navegacao ul{
     list-style: none;
     text-transform: uppercase;
     position: static; 
-    /* estatico a partir de agora */
     top: auto; 
-    /* reset */
-    left: auto; 
-    /* reset */
-    margin-left: 0; 
-    /* reset */
+    left:auto; 
+    margin-left: 1000px; 
     padding: 0; 
-    /* reset */
     display: flex; 
-    /* flex de liner p alinhar */
+    margin-top: -10pxpx;
 }
 
 nav#navegacao li{
     display: inline-block;
     margin: 0 10px; 
-    /* margem ajustada p links */
     transition: 1s;
 }
 
@@ -58,60 +51,53 @@ nav#navegacao a:hover{
     text-decoration: underline;
 }
 
-/* "section#poscabecalho p" não é um seletor HTML valido mudei p "p#poscabecalho" */
 
 p#poscabecalho{
     text-align: center;
     text-decoration-color: #FFFFFF;
-    position: static; 
-    /* static de novo */
+    position: relative; 
     color: #00BFFF;
     margin-left: 20px; 
-    /* retirei as proporcoes para ficar tudo padrao */
-    top: auto; 
-    /* reset */
+    top: 100% 90vw; 
     font-size: 0.9em;
     font-style: italic;
     opacity: 0.7;
+    margin-top: -140px;
 
 }
 
 
 div#actions{
-    position: static; 
-    top: auto; 
-    margin-left: auto; 
+    position: relative; 
+    top: -20px; 
+    margin-left:220%; 
     display: flex; 
     align-items: center; 
     gap: 10px; 
     
-/* tudoaq em cima foi mudado p o statics e resetados para config auto */
 
 }
 
 div#actions button {
-    margin-left: 0; 
-    position: static; 
-    top: auto; 
+    margin-left: 105%; 
+    position: relative; 
+    top:-21px; 
     background-color: #00BFFF;
     box-shadow: 1px 1px auto;
-    /* tudoaq em cima foi mudado p o statics e resetados para config auto */
 }
 
 div#actions a{
-    margin-left: 0; 
-    position: static; 
-    top: auto; 
-    /* tudoaq em cima foi mudado p o statics e resetados para config auto */
+    margin-left: 100px; 
+    position: relative; 
+    top: -10px; 
 }
 
 div#banner{
-   width: 100%; /* 110% p 100% */
+   width: 100%; 
    height: auto;
    position: relative;
    object-fit: center;
    margin-left: 0; 
-   /* ajuste marg */
    margin-right:auto;
    border-top: 4px solid #00BFFF;
 
@@ -129,73 +115,57 @@ body#corpo{
     margin: 0;
 }
 
-/* CORREÇÃO PRINCIPAL: Aplicação do CSS Grid para as seções de produtos */
+
 section#produtos, section#outras_imagens {
     display: grid; 
-    /* GRID (grade de 4 (la ele)) */
     grid-template-columns: repeat(4, 1fr); 
-    /* todas colunas com mesmo padrao */
     gap: 20px; 
-    /* espaçamento produtos */
     max-width: 1100px; 
-    /* largura auto p img */
     margin: 20px auto; 
-    /* centraliza a section na pag */
     padding: 20px 0; 
-    /*  padding */
 }
 
-/* h1 em todas as colunas e centralizado agr */
+
 section#produtos h1, section#outras_imagens h1 {
     grid-column: 1 / -1; 
-    /* h1 te ultima column */
     text-align: center;
     margin-bottom: 30px;
 }
 
 figure{ 
-    /* estila em toda fgr */
     border: 8px solid white;
     box-shadow: 1px 1px 4px rgba(0,0,0,.5);
     margin: 0; 
-    /* reset */
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s;
     position: static; 
-    /* IMPORTANTE: ISSO GARANTE QUE NENHUM POSICIONAMENTO QUEBRE O GRID */
 }
 
 figure:hover{ 
-    /* hover unificado */
     background-color: #f0f0f0;
     transform:translateY(-1px);
 }
 
 figure figcaption h3{ 
-    /* seletor da h3 organizado agr */
     text-align: center;
     min-height: 3em; 
-    /* mantem o alinhamento agr */
     overflow: hidden;
 }
 
 figure figcaption p{ 
-    /* unifiquei o seletor de p */
     text-align: center;
     color: #010184;
     font-weight: bold;
 }
 
 figure img { 
-    /* imagem ajustada full */
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 10px;
 }
 
-/* botao carrinho ajustado pro grid */
 
 .btn-add-carr{
 background-color: #00E5FF;
@@ -220,11 +190,10 @@ transition: background-color 0.3 ease, transform 0.1s;
 }
 
 /* estilo do rodape pro flex */
+
 section#rodape {
     background-color: rgb(5, 10, 99); 
-    /* tava sem fundo, ta com fundo agr */
     color: #ffffff; 
-    /* estava sem cor o texto, deixei que nem o padrao */
     padding: 40px 20px;
     margin-left: -10px;
     margin-right: -10px;
@@ -232,19 +201,15 @@ section#rodape {
 
 footer {
     display: flex; 
-    /* flexbox p ficar lado a lado */
     justify-content: space-around; 
-    /* espacamento dos blocos */
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto; 
-    /* centraliza o footer */
 }
 
 div#Empresa, div#formulario, div#redes_sociais {
     flex: 1; 
-    /* correção de composicao */
     min-width: 250px;
     margin: 20px;
 }
@@ -260,14 +225,12 @@ div#Empresa img {
 }
 
 div#formulario h3, div#redes_sociais h3 { 
-    /* style p composicao*/
     border-bottom: 2px solid #00BFFF;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.newsletter-form input, .newsletter-form button { 
-    /* boto~es estilizados e padrao */
+.newsletter-form input, .newsletter-form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -284,6 +247,7 @@ div#formulario h3, div#redes_sociais h3 {
     color: white;
     font-weight: bold;
     cursor: pointer;
+    width: 1139px;
     transition: background-color 0.3s;
 }
 
@@ -303,3 +267,44 @@ div#redes_sociais img {
 div#redes_sociais img:hover {
     transform: scale(1.1);
 }
+
+/* Sobre nos */
+
+section#apresentacao{
+    background-color: #ffffff; /* Fundo branco para a seção */
+    border: 1px solid #e0e0e0; /* Borda cinza clara sutil, ou o azul #3498db para destacar */
+    border-radius: 10px; /* Borda um pouco mais arredondada */
+    padding: 40px; /* Mais padding interno para dar "respiro" */
+    margin: 80px auto; /* Centraliza a seção e adiciona margem */
+    max-width: 1600px; /* Define uma largura máxima para o conteúdo não esticar demais */
+    height: 780px;
+    text-align: center; /* Centraliza o texto */
+    font-family: Arial, sans-serif; /* Uma fonte limpa */
+    color: #333333; /* Cor do texto principal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+} 
+
+section#apresentacao img {
+    max-width: 700px; 
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; 
+    margin: 0 auto 30px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #e0e0e0; 
+    transition: 1s;
+}
+
+section#imagemfinal {
+   width: 100%; 
+   height: auto;
+   position: relative;
+   object-fit: center;
+   margin-left: 0; 
+   margin-right:auto;
+   border-top: 4px solid #00BFFF;
+   border-bottom: 4px solid #00BFFF;;
+}
+
+
+
