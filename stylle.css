@@ -271,22 +271,22 @@ div#redes_sociais img:hover {
 /* Sobre nos */
 
 section#apresentacao{
-    background-color: #ffffff; /* Fundo branco para a seção */
-    border: 1px solid #e0e0e0; /* Borda cinza clara sutil, ou o azul #3498db para destacar */
-    border-radius: 10px; /* Borda um pouco mais arredondada */
-    padding: 40px; /* Mais padding interno para dar "respiro" */
-    margin: 80px auto; /* Centraliza a seção e adiciona margem */
-    max-width: 1600px; /* Define uma largura máxima para o conteúdo não esticar demais */
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; 
+    padding: 40px; 
+    margin: 80px auto; 
+    max-width: 1600px; 
     height: 780px;
-    text-align: center; /* Centraliza o texto */
-    font-family: Arial, sans-serif; /* Uma fonte limpa */
-    color: #333333; /* Cor do texto principal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    color: #333333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 } 
 
 section#apresentacao img {
     max-width: 700px; 
-    height: auto; /* Mantém a proporção original da imagem */
+    height: auto; 
     display: block; 
     margin: 0 auto 30px auto; 
     border-radius: 8px;
